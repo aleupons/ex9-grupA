@@ -33,6 +33,7 @@ body {
   .list li img:hover ~ .esconder {
     visibility: visible;
   }
+}
 .buy{
     border: 2px solid var(--color-primario);
     border-radius: 0%;
