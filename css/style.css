@@ -8,6 +8,9 @@ ul {
 body {
   font-family: 'Nunito', sans-serif;
 }
+.cabecera{
+    box-shadow: 0 5px 10px rgb(180, 180, 180,0.3);
+}
 .logo {
   width: 68px;
   height: 62px;
