@@ -33,7 +33,7 @@ body {
     visibility: hidden;
     transition: visibility 0 0.5s;
   }
-  .list li img:hover ~ .esconder {
+  .cont-hover:hover .esconder {
     visibility: visible;
   }
 }
