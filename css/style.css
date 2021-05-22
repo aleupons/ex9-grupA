@@ -38,6 +38,7 @@ body {
   }
 }
 .buy{
+    background-color: transparent;
     border: 2px solid var(--color-primario);
     border-radius: 0%;
     border-top-left-radius: 0px;
