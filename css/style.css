@@ -1,5 +1,6 @@
-:root {
-  --color-primario: #ed6436;
+:root{
+    --color-primario: #ed6436;
+    --color-secundario: #fff;
 }
 ul {
   list-style: none;
@@ -32,4 +33,25 @@ body {
   .list li img:hover ~ .esconder {
     visibility: visible;
   }
+.buy{
+    border: 2px solid var(--color-primario);
+    border-radius: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.buy:hover{
+    background-color: var(--color-primario);
+}
+.view{
+    background-color:  var(--color-primario);
+    border-radius: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.view:hover{
+    background-color: var(--color-secundario) ;
 }
