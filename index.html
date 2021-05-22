@@ -19,58 +19,92 @@
 <body>
 
   <div class="container-fluid">
-    <header class="cabecera navbar-expand-sm row">
-      <div class="logo navbar-brand col">
+    <header class="cabecera navbar-expand-sm row align-items-center">
+      <div class="logo navbar-brand col mr-0">
         <a href="index.html">
-          <img src="img/logo2.png" alt="Orange canine imprint">
+          <img class="logo" src="img/logo2.png" alt="Orange canine imprint">
         </a>
       </div>
-      <nav class="navegacion collapse navbar-collapse col">
-        <ul class="list-unstyled row">
-          <li class="nav-item col">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"
+        data-toggle="collapse">
+        <i class="menu fas fa-bars icono-dropdown navbar-toggler-icon"></i>
+      </button>
+      <nav class="navegacion collapse navbar-collapse align-items-center justify-content-end col" id="navbar">
+        <ul class="row align-items-center my-0">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item dropdown col">
-            <a class="nav-link" href="">Live Demo</a>
-            <i class="fas fa-caret-down"></i>
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+              href="">Live Demo <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="">Pets Boarding Services</a>
+              <a class="dropdown-item" href="">Pets Toys and Food Shop</a>
+              <a class="dropdown-item" href="">Pets Training School</a>
+            </div>
           </li>
-          <li class="nav-item dropdown col">
-            <a class="nav-link" href="">Live Demo Blocks</a>
-            <i class="fas fa-caret-down"></i>
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+              href="">Live Demo Blocks <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="">Pets Boarding Services</a>
+              <a class="dropdown-item" href="">Pets Toys and Food Shop</a>
+              <a class="dropdown-item" href="">Pets Training School</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button class="buy btn">Buy Now</button>
           </li>
         </ul>
       </nav>
-      <button class="buy collapse navbar-collapse col">Buy Now</button>
     </header>
 
-    <main class="principal row">
-      <section class="col">
-        <div class="col">
-          <h1>Pet activities</h1>
-          <h2>Take a closer look</h2>
-          <button class="view">View all</button>
+    <main class="principal row min-vh-100">
+      <section class="pet-activities col">
+        <div class="title row">
+          <div class="text-center text-sm-left col-12 col-sm">
+            <h1>Pet activities</h1>
+            <h2>Take a closer look</h2>
+          </div>
+          <button class="view btn text-sm-right col-12 col-sm">View all</button>
         </div>
-        <ul class="pet-activities col">
-          <li class="row">
+        <ul class="list row text-center p-0">
+          <li class="col-12 col-sm-4">
             <img src="img/01.jpg" alt="Dog biting a toy">
-            <h3>Activities</h3>
-            <p>Toys Playtime</p>
+            <span class="esconder">
+              <h3>Activities</h3>
+              <p>Toys Playtime</p>
+            </span>
           </li>
-          <li class="row">
+          <li class="col-12 col-sm-4">
             <img src="img/02.jpg" alt="Cat under a blanket">
-            <h3>Activities</h3>
-            <p>Active Rest</p>
+            <span class="esconder">
+              <h3>Activities</h3>
+              <p>Active Rest</p>
+            </span>
           </li>
-          <li class="row">
+          <li class="col-12 col-sm-4">
             <img src="img/03.jpg" alt="Brown small dog running across the grass">
-            <h3>Activities</h3>
-            <p>Game Walks</p>
+            <span class="esconder">
+              <h3>Activities</h3>
+              <p>Game Walks</p>
+            </span>
           </li>
         </ul>
       </section>
     </main>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
