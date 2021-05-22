@@ -9,6 +9,9 @@ li,ul{
 body {
   font-family: 'Nunito', sans-serif;
 }
+.cabecera{
+    box-shadow: 0 5px 10px rgb(180, 180, 180,0.3);
+}
 .buy{
     border: 2px solid var(--color-primario);
     border-radius: 0%;
