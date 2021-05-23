@@ -23,18 +23,39 @@ body {
 .list img {
   width: 100%;
 }
-.esconder {
+.list li {
+  margin-bottom: 32px;
+}
+.cont-hover {
   position: relative;
-  bottom: 80px;
-  color: #fff;
+}
+.esconder {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 3%;
+  color: var(--color-secundario);
+}
+.cont-hover img {
+  filter: brightness(60%);
 }
 @media (min-width:576px) {
   .esconder {
+    bottom: 30%;
     visibility: hidden;
-    transition: visibility 0 0.5s;
+    opacity: 0;
+    transition: visibility 0.4s linear, opacity 0.4s linear;
   }
   .cont-hover:hover .esconder {
     visibility: visible;
+    opacity: 1;
+  }
+  .cont-hover img {
+    filter: brightness(100%);
+    transition: filter 0.5s;
+  }
+  .cont-hover:hover img {
+    filter: brightness(60%);
   }
 }
 .buy{
