@@ -39,9 +39,13 @@ ul {
   color: var(--color-primario);
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .title h2 {
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+.navegacion {
   font-weight: 800;
 }
 .navegacion a {
@@ -110,6 +114,8 @@ ul {
   }
 }
 .buy{
+    text-transform: uppercase;
+    font-size: 1.2rem;
     background-color: transparent;
     border: 2px solid var(--color-primario);
     border-top-left-radius: 0px;
@@ -122,6 +128,9 @@ ul {
     color: var(--color-secundario);
 }
 .view{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
     background-color:  var(--color-primario);
     color: var(--color-secundario);
     border-color: transparent;
