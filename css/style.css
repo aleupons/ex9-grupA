@@ -1,15 +1,26 @@
 :root{
     --color-primario: #ed6436;
     --color-secundario: #fff;
-}
-ul {
-  list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body {
   font-family: 'Nunito', sans-serif;
 }
+ul {
+  list-style: none;
+}
+.principal {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 .cabecera{
     box-shadow: 0 5px 10px rgb(180, 180, 180,0.3);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.cont-logo {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .logo {
   width: 68px;
@@ -19,6 +30,37 @@ body {
   font-size: 35px;
   position: relative;
   top: 15px;
+}
+.title {
+  padding-top: 32px;
+  padding-bottom: 54px;
+}
+.title h1 {
+  color: var(--color-primario);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.title h2 {
+  font-weight: 800;
+}
+.navegacion a {
+  color: #000;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navegacion a:hover {
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-primario);
+}
+.list h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.list p {
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 .list img {
   width: 100%;
@@ -37,9 +79,18 @@ body {
   color: var(--color-secundario);
 }
 .cont-hover img {
+  border-radius: 20px;
   filter: brightness(60%);
 }
 @media (min-width:576px) {
+  .principal {
+    padding-right: initial;
+    padding-left: initial;
+  }
+  .title {
+    padding-top: 70px;
+    padding-bottom: 54px;
+  }
   .esconder {
     bottom: 30%;
     visibility: hidden;
@@ -61,7 +112,6 @@ body {
 .buy{
     background-color: transparent;
     border: 2px solid var(--color-primario);
-    border-radius: 0%;
     border-top-left-radius: 0px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -69,15 +119,20 @@ body {
 }
 .buy:hover{
     background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 .view{
     background-color:  var(--color-primario);
-    border-radius: 0%;
+    color: var(--color-secundario);
+    border-color: transparent;
+    border-style: solid;
     border-top-left-radius: 0px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 .view:hover{
-    background-color: var(--color-secundario) ;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-color: var(--color-primario);
 }
